@@ -1,43 +1,11 @@
-<script>
-    /* Las variable se pueden declarar como var o let, cualquiera de las 2 es valida, la diferencia principal es que let te deja cambiar las variables cuando vos quieras, mientras que var o const son definidas y quedan definidas desde el principio */
-    var nombre = "Juan";
-    //console.log(nombre); // Variable de tipo string
-    let caracter = 'a';
-    //console.log(caracter);
-    let numero = 1;
-    var numero2 = 2;
-    //console.log(numero, numero2); /* se pueden hacer operaciones matematicas en los console.log */
-    let array = [1, 2, 3];
-    //console.log(array[0]); buscar un elemento especifico dentro del array
-    /* Los array tienen sus propios metodos, como el .length() y .push(), length sirve para ver la dimension del array y tambien hacer como el ejemplo de abajo, push sirve para "pushear" o "empujar" un elemento al final del array. Otro metodo es el .pop() el cual remueve el ultimo elemento del array y lo retorna como el valor */
-    array[array.length - 1] = 4; /* Cambia el valor del ultimo elemento del array */
-    array.push(5) /* Empuja el valor 5 al ultimo elemento */
-    let pop = array.pop();  /* El pop remueve el ultimo elemento del array y lo retorna como el valor */
-    //console.log(array); 
-    //console.log(pop); 
-    //console.log(array);
-    //Las constantes se declaran con const, y no se pueden cambiar, por lo que si se intenta cambiar el valor de una constante, el programa no va a funcionar y dara error.
-    const constante = 1;
-    const palabra = "hola";
-    const vector = [];
-</script>
-<script>
-    //Cuando se necesita realizar una tarea repetidamente hasta que una condicion se haga se necesita usar un loop. El mas basico es el for loop
-    for (iterador; condicion; iteracion){ //El iterador es el valor inicial que indica como va iterando el loop, la condicion es el valor que se tiene que cumplir para que el loop siga y la iteracion es lo que se le suma al iterador cada vez que se cumple la condicion.
-        logica;
-    }
-    const contador = 10;
-    for (let i = 0; i < contador; i = i + 1){
-        console.log(i) //El iterador empieza en 0, la condicion es que i sea menor a 10 y la iteracion es que i se le suma 1 cada vez que se cumple la condicion. Por lo que el loop va a iterar 10 veces, desde 0 hasta 9.
-    }
-    let rows = [];
-    let result = "";
-    for (const row of rows) { //El for of loop es un loop que se usa para iterar sobre los elementos de un array, en este caso rows. El iterador es el valor inicial que indica como va iterando el loop, la condicion es el valor que se tiene que cumplir para que el loop siga y la iteracion es lo que se le suma al iterador cada vez que se cumple la condicion.
-        result = result + "\n" + row; //El resultado es el valor que se va a ir sumando cada vez que se cumple la condicion. En este caso, el resultado es el valor de cada elemento del array rows. Se puede agregar un salto de linea con el \n, que es un caracter especial que indica un salto de linea.
-    }
-    //Voy a intentar hacer una piramide.
-    const hash = "#"; //El hash es el caracter que se va a usar para hacer la piramide.
-    for (let i = 1; i < contador; i=i+1){
-        rows.push(hash.repeat(i+1)); //El repeat es un metodo que se usa para repetir una variable las veces que se indica. En este caso, el hash se va a repetir i veces, donde i es el iterador que va desde 1 hasta 10. Por lo que la piramide va a ir creciendo de a 1 cada vez que se cumple la condicion.
-    }
-</script>
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>RPG - Jueguito</title>
+        <script src="./script.js"></script>
+    </head>
+    <body>
+
+    </body>
+</html>
